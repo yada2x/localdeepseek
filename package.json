@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "localdeepseek": "file:",
     "ollama": "^0.5.12"
   },
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   },
   "name": "localdeepseek",
@@ -10,7 +12,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
